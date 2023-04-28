@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron Desktop</title>
+  </head>
+  <body>
+    <p id="isDarkMode">当前系统是采用的暗黑模式:</p>
+    <!-- <button onclick="setTheme('light')">设置浅色</button>
+    <button onclick="setTheme('dark')">设置深色</button> -->
+    <button onclick="preloadApi.setTheme('light')">设置浅色</button>
+    <button onclick="preloadApi.setTheme('dark')">设置深色</button>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: white;
+        }
+      }
+    </style>
+  </body>
+</html>
