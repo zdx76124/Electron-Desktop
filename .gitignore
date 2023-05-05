@@ -1,0 +1,4 @@
+node_modules/
+electron-desktop-darwin-x64/
+.DS_Store
+yarn.lock
